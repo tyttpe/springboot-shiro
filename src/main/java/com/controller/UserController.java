@@ -39,6 +39,11 @@ public class UserController {
         return "/login";
     }
 
+    @RequestMapping("/unAuth")
+    public String unAuth(){
+        return "/unAuth";
+    }
+
     /**
      * 测试thymeleaf
      */
@@ -49,6 +54,8 @@ public class UserController {
         //返回test.html
         return "test";
     }
+
+
 
     /**
      * 登录逻辑处理
